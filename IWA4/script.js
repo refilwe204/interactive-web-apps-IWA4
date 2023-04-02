@@ -4,6 +4,7 @@ let status = 'student';
 let count = 0; 
 
 if (date === 2050) { 
+	// Display holidays that occur in the first half of the year
 	console.log("January", 'New Year’s Day');
 	console.log("March", 'Human Rights Day');
 	console.log("April", 'Family Day'); 
@@ -11,20 +12,24 @@ if (date === 2050) {
 	count += 4; 
 
 	if (status === "student") {
+		// If the person is a student, display the Youth Day holiday and increment the count
 		console.log('June', 'Youth Day');
 		count += 1;
 	}
 
+	// Display holidays that occur in the second half of the year
 	console.log('August', 'Women’s Day');
 	console.log('September', 'Heritage Day');
 	console.log('December', 'Day of Reconciliation');
 	count += 3;
 
 	if (status === "parent") {
+		// If the person is a parent, display the Christmas Day holiday and increment the count
 		console.log('December', 'Christmas Day');
 		count += 1;
 	}
 
+	// Display the Day of Goodwill holiday and increment the count
 	console.log('December', 'Day of Goodwill');
 	count += 1;
 }
